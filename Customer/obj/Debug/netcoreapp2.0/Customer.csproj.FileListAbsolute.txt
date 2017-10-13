@@ -1,0 +1,38 @@
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\bin\Debug\netcoreapp2.0\Messages.dll
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\obj\Debug\netcoreapp2.0\Customer.csproj.CoreCompileInputs.cache
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\obj\Debug\netcoreapp2.0\Customer.AssemblyInfoInputs.cache
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\obj\Debug\netcoreapp2.0\Customer.AssemblyInfo.cs
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\bin\Debug\netcoreapp2.0\Customer.deps.json
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\bin\Debug\netcoreapp2.0\Customer.runtimeconfig.json
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\bin\Debug\netcoreapp2.0\Customer.runtimeconfig.dev.json
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\bin\Debug\netcoreapp2.0\Customer.dll
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\bin\Debug\netcoreapp2.0\Customer.pdb
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\bin\Debug\netcoreapp2.0\Messages.pdb
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\obj\Debug\netcoreapp2.0\Customer.dll
+C:\Systemintegration\Solutions\MiniProjectPart2\Customer\obj\Debug\netcoreapp2.0\Customer.pdb
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.deps.json
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.runtimeconfig.json
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.runtimeconfig.dev.json
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.dll
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.pdb
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Messages.dll
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Messages.pdb
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.csprojResolveAssemblyReference.cache
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.csproj.CoreCompileInputs.cache
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.AssemblyInfoInputs.cache
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.AssemblyInfo.cs
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.dll
+C:\Systemintegration\Solutions\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.pdb
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.deps.json
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.runtimeconfig.json
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.runtimeconfig.dev.json
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.dll
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Customer.pdb
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Messages.dll
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\bin\Debug\netcoreapp2.0\Messages.pdb
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.csprojResolveAssemblyReference.cache
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.csproj.CoreCompileInputs.cache
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.AssemblyInfoInputs.cache
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.AssemblyInfo.cs
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.dll
+E:\System Integration Example\MiniProjectPart2_Simple\Customer\obj\Debug\netcoreapp2.0\Customer.pdb
