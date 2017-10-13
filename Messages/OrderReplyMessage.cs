@@ -5,7 +5,7 @@
         public int WarehouseId { get; set; }
         public int OrderId { get; set; }
         public int ProductId { get; set; }
-        public int CustomerId { get; set; }
+        //public int CustomerId { get; set; }
         public int ItemsInStock { get; set; }
         public int DaysForDelivery { get; set; }
         public decimal ShippingCharge { get; set; }

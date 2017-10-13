@@ -12,6 +12,13 @@ namespace Retailer
         private IBus bus = null;
         private int orderId = 0;
 
+
+        private ConcurrentDictionary<int, RetailerOrderRequestMessage> outstandingOrderRequests =
+            new ConcurrentDictionary<int, RetailerOrderRequestMessage>();
+
+
+        private ConcurrentDictionary<int, int> customerIdsForOutstandingOrderRequests =
+        new ConcurrentDictionary<int, int>();
         public void Start()
         {
             using (bus = RabbitHutch.CreateBus("host=localhost"))
@@ -21,7 +28,7 @@ namespace Retailer
                 Console.ResetColor();
 
                 // Listen for order request messages from customers
-                bus.Receive<CustomerOrderRequestMessage>("retailerQueue", message => HandleOrderRequest(message));
+                bus.Receive<CustomerOrderRequestMessages>("retailerQueue", message => HandleOrderRequest(message));
 
                 // Listen for order reply messages from warehouses
                 bus.Receive<OrderReplyMessage>(replyQueueName, message => HandleOrderReplyMessage(message));
@@ -34,7 +41,7 @@ namespace Retailer
             }
         }
 
-        private void HandleOrderRequest(CustomerOrderRequestMessage request)
+        private void HandleOrderRequest(CustomerOrderRequestMessages request)
         {
             int customerId = request.CustomerId;
             Console.ForegroundColor = ConsoleColor.Red;
@@ -47,6 +54,9 @@ namespace Retailer
 
             OrderRequestMessageToLocalWarehouse requestMessage =
                 MessageTransformers.EnrichOrderRequestMessage(filteredMessage, replyQueueName, ++orderId);
+
+            outstandingOrderRequests.TryAdd(orderId, requestMessage);
+            customerIdsForOutstandingOrderRequests.TryAdd(orderId, customerId);
             //OrderRequestMessageToLocalWarehouse requestMessage = new OrderRequestMessageToLocalWarehouse
             //{
             //    ProductId = request.ProductId,
@@ -64,7 +74,9 @@ namespace Retailer
 
         private void HandleOrderReplyMessage(OrderReplyMessage message)
         {
+            int customerId;
             Console.WriteLine("Reply received");
+            RetailerOrderRequestMessage requestMessage = new RetailerOrderRequestMessage();
 
             if (message.ItemsInStock > 0)
             {
@@ -76,9 +88,10 @@ namespace Retailer
                 Console.WriteLine("Shipping charge: " + message.ShippingCharge);
                 Console.ResetColor();
 
+                customerIdsForOutstandingOrderRequests.TryGetValue(message.OrderId, out customerId);
                 // Uses Topic Based Routing to send the reply to a customer.
                 // The topic ís the customerId from the reply message.
-                bus.Publish<OrderReplyMessage>(message, message.CustomerId.ToString());
+                bus.Publish<OrderReplyMessage>(message, customerId.ToString());
             }
             else if (message.DaysForDelivery == 2)
             {
@@ -88,12 +101,11 @@ namespace Retailer
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Publishing to all warehouses");
                 Console.ResetColor();
-
+                //RetailerOrderRequestMessage m = message as RetailerOrderRequestMessage;
                 OrderBroadcastRequestMessage broadcastRequestMessage = new OrderBroadcastRequestMessage
                 {
                     OrderId = message.OrderId,
                     ProductId = message.ProductId,
-                    CustomerId = message.CustomerId,
                     ReplyTo = replyQueueName,
                     Country = ""
                 };

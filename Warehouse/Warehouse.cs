@@ -71,7 +71,6 @@ namespace Warehouse
                 WarehouseId = this.id,
                 OrderId = message.OrderId,
                 ProductId = message.ProductId,
-                CustomerId = message.CustomerId,
                 ItemsInStock = itemsInStock,
                 DaysForDelivery = daysForDelivery,
                 ShippingCharge = shippingCharge

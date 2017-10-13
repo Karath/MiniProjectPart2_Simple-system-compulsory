@@ -42,6 +42,7 @@ namespace Customer
         {
             reply = new OrderReplyMessage
             {
+                //CustomerId = message.CustomerId,
                 WarehouseId = message.WarehouseId,
                 OrderId = message.OrderId,
                 ItemsInStock = message.ItemsInStock,

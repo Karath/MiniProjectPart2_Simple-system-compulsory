@@ -31,9 +31,9 @@ E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\bin\Debug\netcor
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\bin\Debug\netcoreapp2.0\Warehouse.pdb
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\bin\Debug\netcoreapp2.0\Messages.dll
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\bin\Debug\netcoreapp2.0\Messages.pdb
-E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\obj\Debug\netcoreapp2.0\Warehouse.csprojResolveAssemblyReference.cache
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\obj\Debug\netcoreapp2.0\Warehouse.csproj.CoreCompileInputs.cache
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\obj\Debug\netcoreapp2.0\Warehouse.AssemblyInfoInputs.cache
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\obj\Debug\netcoreapp2.0\Warehouse.AssemblyInfo.cs
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\obj\Debug\netcoreapp2.0\Warehouse.dll
 E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\obj\Debug\netcoreapp2.0\Warehouse.pdb
+E:\System Integration Example\MiniProjectPart2_Simple\Warehouse\obj\Debug\netcoreapp2.0\Warehouse.csprojResolveAssemblyReference.cache
